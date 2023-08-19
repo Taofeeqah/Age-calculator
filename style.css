@@ -36,11 +36,14 @@ body{
     background-color:var(--White) ;
     border-radius: 20px;
     border-bottom-right-radius: 150px;
-    bor
 }
 
 #input {
     display: flex;
+    padding-top: 40px;
+    color: var(--Smokey-grey);
+    font-size: 0.7rem;
+    font-weight: var(--font-weight-bold);
 }
 
 .inputAge {
