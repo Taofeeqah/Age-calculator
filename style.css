@@ -68,6 +68,7 @@ body{
 .inputAge {
     display: flex;
     flex-direction: column;
+    padding-left: 24px;
 }
 
 .attribution { 
