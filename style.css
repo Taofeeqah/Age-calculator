@@ -78,7 +78,7 @@ body{
     position: relative;
     top: 30px;
     left: 40px;
-    border-bottom: solid 2px var(--Light-grey);
+    border-bottom: solid 2px var(--Off-white);
     
 }
 #button{
@@ -91,6 +91,33 @@ body{
     padding-top: 12px;
     margin-left: 470px;
     cursor: pointer;
+}
+
+#age{
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-extra-bold-italic);
+    color: var(--Off-black);
+    /* font-size: 2rem; */
+    line-height: 80px;
+    padding-left: 40px;
+}
+
+span{
+    color: var(--purple);
+    /* margin-right: -5px; */
+}
+
+p{
+    font-size: 4rem;
+}
+
+small{
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-regular-italic);
+    visibility: hidden;
+    color: var(--Light-red);
+    font-size: 0.5rem;
+    padding-top: 5px;
 }
 
 .attribution { 
