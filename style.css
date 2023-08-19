@@ -1,5 +1,4 @@
-:root {
-    :root{
+:root{
         /*colors*/
     --purple: hsl(259, 100%, 65%);
     --Light-red: hsl(0, 100%, 67%);
@@ -20,6 +19,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color:var(--Off-white);
+    display: grid;
+    place-items: center; 
+    position: relative;
+}
+.card{
+    font-family: var(--font-family);
+    height: 440px;
+    width: 550px;
+    background-color:var(--White) ;
+    border-radius: 20px;
+    border-bottom-right-radius: 150px;
 }
 
 #input {
