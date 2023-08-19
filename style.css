@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@600&family=Bai+Jamjuree:wght@400;600&family=Barlow:wght@600&family=Fraunces:wght@700;900&family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+
 :root{
         /*colors*/
     --purple: hsl(259, 100%, 65%);
@@ -46,6 +48,23 @@ body{
     font-weight: var(--font-weight-bold);
 }
 
+::placeholder{
+    color: var(--Smokey-grey);
+    font-weight: var(--font-weight-bold);
+    font-size: 1.4rem;
+}
+
+.date-input{
+    height: 50px;
+     width: 110px;
+     border-radius: 5px;
+     border:solid 1.2px var(--Off-white);
+     margin-top: 5px;
+     font-family: var(--font-family);
+     font-size: 28px;
+     color: var(--Off-black);
+     padding-left: 13px;
+}
 .inputAge {
     display: flex;
     flex-direction: column;
