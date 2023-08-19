@@ -56,15 +56,15 @@ body{
 
 .date-input{
     height: 50px;
-     width: 110px;
-     border-radius: 5px;
-     border:solid 1.2px var(--Off-white);
-     margin-top: 5px;
-     font-family: var(--font-family);
-     font-size: 28px;
-     color: var(--Off-black);
-     padding-left: 13px;
-     outline: 0;
+    width: 110px;
+    border-radius: 5px;
+    border:solid 1.2px var(--Off-white);
+    margin-top: 5px;
+    font-family: var(--font-family);
+    font-size: 28px;
+    color: var(--Off-black);
+    padding-left: 13px;
+    outline: 0;
 }
 .inputAge {
     display: flex;
@@ -128,3 +128,26 @@ small{
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
+
+@media   (max-width: 550px) {
+
+    #line{
+      width: 75vw;
+      /* margin-left: -13px; */
+      margin-top: 30px;
+    }
+
+    #button{
+      position: fixed;
+      margin-top: 5px;
+      margin-left: 40%;
+      z-index: 1;
+    }
+    .card{
+      width: 90vw;
+      height: 500px;
+      border-bottom-right-radius: 100px;
+  
+    }
+
+}    
