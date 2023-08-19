@@ -129,12 +129,12 @@ small{
     color: hsl(228, 45%, 44%); 
 }
 
-@media   (max-width: 550px) {
+@media  (max-width: 550px) {
 
     #line{
       width: 75vw;
-      /* margin-left: -13px; */
-      margin-top: 30px;
+      margin-left: -13px;
+      margin-top: 20px;
     }
 
     #button{
@@ -161,6 +161,34 @@ small{
         color: var(--Smokey-grey);
         font-weight: var(--font-weight-bold);
         font-size: 1rem;
+    }
+
+    .date-input{
+        height: 50px;
+        width: 87px;
+        font-size: 22px;
+    }
+
+    #day{
+        padding-left: 10px;
+    }
+
+    #month{
+        padding-left: 10px;
+    }
+
+    #year{
+        padding-left: 10px;
+    }
+
+    #age{
+        padding-top: 40px;
+        margin-top: 30px;
+    }
+
+    p{
+        font-size: 2.5rem;
+        margin-left: -13px;    
     }
 
 }    
