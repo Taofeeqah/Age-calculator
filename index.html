@@ -4,25 +4,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png"> 
   <title>Frontend Mentor | Age calculator app</title>
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <div class="card">
     <form method="post" id="input">
       <div class="inputAge" id="day">
         <label for="DAY">DAY</label>
-        <input type="number" name="day" id="day" placeholder="DAY" required>
-        <small class="error-msg"></small>
+        <input type="number" name="Day" id="Day" class="date-input" placeholder="DD" required>
+        <small>error message</small>
       </div>
 
-      <label for="day">DAY</label>
-      <input type="number" name="day" id="day" placeholder="MONTH" required>
+      <div class="inputAge" id="month">
+        <label for="MONTH">MONTH</label>
+        <input type="number" name="month" id="Month" class="date-input" placeholder="MM" required>
+        <small>error message</small>
+      </div>
 
-      <label for="day">DAY</label>
-      <input type="number" name="day" id="day" placeholder="YEAR" required>
+      <div class="inputAge" id="year">
+        <label for="YEAR">YEAR</label>
+        <input type="number" name="year" id="Year" class="date-input" placeholder="YY" required>
+        <small>error message</small>
+      </div>
+
+      
     </form>
   </div>
 
