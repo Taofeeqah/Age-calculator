@@ -65,3 +65,86 @@ else{
     ageCalc();
 }
 }
+
+function anotherError(input){
+    const InputAge = input.parentElement;
+    InputAge.className = 'inputAge error';
+    const errorMessage = InputAge.querySelector('small');
+    errorMessage.innerText = '';
+}
+
+function showError(input , message){
+    const InputAge = input.parentElement;
+    InputAge.className = 'inputAge error';
+    const errorMessage = InputAge.querySelector('small');
+    errorMessage.innerText = message;
+
+    }
+
+function isValid(input,message){
+    const InputAge = input.parentElement;
+    InputAge.className = 'inputAge error';
+    const errorMessage = InputAge.querySelector('small');
+    errorMessage.innerText = message;
+}
+
+function success(input1,input2,input3){
+    const InputAge1 = input1.parentElement;
+    InputAge1.className = 'inputAge success';
+    const successMessage1 = InputAge1.querySelector('small');
+    successMessage1.innerText = '';
+
+    const InputAge2 = input2.parentElement;
+    InputAge2.className = 'inputAge success';
+    const successMessage2 = InputAge2.querySelector('small');
+    successMessage2.innerText = '';
+
+    const InputAge3 = input3.parentElement;
+    InputAge3.className = 'inputAge success';
+    const successMessage3 = InputAge3.querySelector('small');
+    successMessage3.innerText = '';
+}
+
+function ageCalc(){
+
+    checkingYear(todayYear);
+
+
+    byear = Number(todayYear) - Number(birthYear.value);
+    if(todayMonth>=birthMonth.value){
+        bmonth = Number(todayMonth) - Number(birthMonth.value);
+    }
+    else{
+        byear--;
+        bmonth = 12 + Number(todayMonth) - Number(birthMonth.value);
+    }
+    if(todayDay>=birthDay.value){
+        bday = Number(todayDay) - Number(birthDay.value);
+    }
+    else{
+        bmonth--;
+        bday = months[Number(todayMonth) - 2] + Number(todayDay) - Number(birthDay.value);
+        if(bmonth < 0){
+            bmonth = 11;
+            byear --;
+        }
+    }
+    displayTheResult(byear,bmonth,bday);
+}
+
+function checkingYear(year){
+    if(year % 4==0 || (year % 100 == 0 && year % 400 == 0)){
+        months[1] = 29;
+    }
+    else{
+        months[1] = 28;
+    }
+}
+
+function displayTheResult(Byear,Bmonth,Bday) {
+    myBirthInYears.textContent = Byear;
+    myBirthInMonths.textContent = Bmonth;
+    myBirthInDays.textContent = Bday;
+}
+
+let
