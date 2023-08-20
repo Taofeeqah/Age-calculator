@@ -120,6 +120,24 @@ small{
     padding-top: 5px;
 }
 
+.inputAge.error label{
+    color: var(--Light-red);
+}
+.inputAge.error input{
+    border-color: var(--Light-red);
+}
+.inputAge.error small{
+    visibility: visible;
+    
+}
+
+.inputAge.success label{
+    color: var(--Smokey-grey)
+}
+.inputAge.success input{
+    border-color: var(--Off-white);
+}
+
 .attribution { 
     font-size: 11px; 
     text-align: center; 
