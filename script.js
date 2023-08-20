@@ -64,6 +64,7 @@ else{
      success(birthDay,birthMonth,birthYear);
     ageCalc();
 }
+
 }
 
 function anotherError(input){
@@ -146,5 +147,3 @@ function displayTheResult(Byear,Bmonth,Bday) {
     myBirthInMonths.textContent = Bmonth;
     myBirthInDays.textContent = Bday;
 }
-
-let
