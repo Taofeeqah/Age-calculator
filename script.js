@@ -147,3 +147,38 @@ function displayTheResult(Byear,Bmonth,Bday) {
     myBirthInMonths.textContent = Bmonth;
     myBirthInDays.textContent = Bday;
 }
+
+
+
+// localStorage
+let output1 = document.querySelector('#yearDash')
+let output2 = document.querySelector('#monthDash')
+let output3 = document.querySelector('#dayDash')
+
+
+document.querySelector('#button').addEventListener('click', function() {
+      var newValue = output1.innerHTML;
+      localStorage.setItem('number1', newValue);
+    });
+
+    var oldValue = localStorage.getItem('number1') || 0;
+    output1.innerHTML = oldValue; 
+
+document.querySelector('#button').addEventListener('click', function() {
+        var newValue = output2.innerHTML;
+        localStorage.setItem('number2', newValue);
+      });
+
+    var oldValue = localStorage.getItem('number2') || 0;
+    output2.innerHTML = oldValue; 
+
+document.querySelector('#button').addEventListener('click', function() {
+        var newValue = output3.innerHTML;
+        localStorage.setItem('number3', newValue);
+      });
+
+    var oldValue = localStorage.getItem('number3') || 0;
+    output3.innerHTML = oldValue; 
+  
+  
+ 
